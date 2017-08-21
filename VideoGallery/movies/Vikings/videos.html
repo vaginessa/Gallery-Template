@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Vikings</title>
+  <script>
+    window.onload = function() {
+      var videos = [ 
+        {
+          "name":"Vikings S1E1 - Rites of Passage", 
+          "link": "https://estream.to/embed-gxgvmfgpf3cx.html", 
+          "img": "http://www.redskiesguild.com/forum/uploads/FileUpload/48/0db66498ef1030d73adc133bc07c42.jpg",
+          "rank": "1",
+          //"type" : "video"
+          "type" : "iframe"
+          //"type" : "link"
+        },
+        {
+          "name":"Vikings S1E2 - Wrath of the Northmen", 
+          "link": "https://estream.to/embed-e4hopf4v84bp.html", 
+          "img": "http://www.redskiesguild.com/forum/uploads/FileUpload/48/0db66498ef1030d73adc133bc07c42.jpg",
+          "rank": "1",
+          "type" : "iframe"
+        },
+        {
+          "name":"Vikings S1E3 - Dispossessed", 
+          "link": "https://estream.to/embed-2vbkeh2ccdb3.html", 
+          "img": "http://www.redskiesguild.com/forum/uploads/FileUpload/48/0db66498ef1030d73adc133bc07c42.jpg",
+          "rank": "1",
+          "type" : "iframe"
+        },
+        {
+          "name":"Vikings S1E4 - Trial", 
+          "link": "https://estream.to/embed-jxhcn32by5jp.html", 
+          "img": "http://www.redskiesguild.com/forum/uploads/FileUpload/48/0db66498ef1030d73adc133bc07c42.jpg",
+          "rank": "1",
+          "type" : "iframe"
+        },
+        {
+          "name":"Vikings S1E5 - Raid", 
+          "link": "https://estream.to/embed-tfwus8qkvd2j.html", 
+          "img": "http://www.redskiesguild.com/forum/uploads/FileUpload/48/0db66498ef1030d73adc133bc07c42.jpg",
+          "rank": "1",
+          "type" : "iframe"
+        },
+        {
+          "name":"Vikings S1E6 - Burial of the Dead", 
+          "link": "https://estream.to/embed-lden1yjead75.html", 
+          "img": "http://www.redskiesguild.com/forum/uploads/FileUpload/48/0db66498ef1030d73adc133bc07c42.jpg",
+          "rank": "1",
+          "type" : "iframe"
+        },
+        {
+          "name":"Vikings S1E7 - A King's Ransom", 
+          "link": "https://estream.to/embed-a95klijur69x.html", 
+          "img": "http://www.redskiesguild.com/forum/uploads/FileUpload/48/0db66498ef1030d73adc133bc07c42.jpg",
+          "rank": "1",
+          "type" : "iframe"
+        },
+        {
+          "name":"Vikings S1E8 - Sacrifice", 
+          "link": "https://estream.to/embed-83llczoyjpf4.html", 
+          "img": "http://www.redskiesguild.com/forum/uploads/FileUpload/48/0db66498ef1030d73adc133bc07c42.jpg",
+          "rank": "1",
+          "type" : "iframe"
+        },
+        {
+          "name":"Vikings S1E9 - All Change", 
+          "link": "https://estream.to/embed-t28147gi15p4.html", 
+          "img": "http://www.redskiesguild.com/forum/uploads/FileUpload/48/0db66498ef1030d73adc133bc07c42.jpg",
+          "rank": "1",
+          "type" : "iframe"
+        },
+        {
+          "name":"Vikings S2E1 - Brother's War", 
+          "link": "https://estream.to/embed-r6g9sypnljmz.html", 
+          "img": "http://www.redskiesguild.com/forum/uploads/FileUpload/48/0db66498ef1030d73adc133bc07c42.jpg",
+          "rank": "1",
+          "type" : "iframe"
+        },
+        {
+          "name":"Vikings S2E2 - Invasion", 
+          "link": "https://estream.to/embed-wzgrqmegqqlb.html", 
+          "img": "http://www.redskiesguild.com/forum/uploads/FileUpload/48/0db66498ef1030d73adc133bc07c42.jpg",
+          "rank": "1",
+          "type" : "iframe"
+        },
+        {
+          "name":"Vikings S2E3 - Treachery", 
+          "link": "https://estream.to/embed-ecmufavhfbxs.html", 
+          "img": "http://www.redskiesguild.com/forum/uploads/FileUpload/48/0db66498ef1030d73adc133bc07c42.jpg",
+          "rank": "1",
+          "type" : "iframe"
+        },
+        {
+          "name":"Vikings S2E4 - Eye for an Eye", 
+          "link": "https://estream.to/embed-n5gyyaro4ef6.html", 
+          "img": "http://www.redskiesguild.com/forum/uploads/FileUpload/48/0db66498ef1030d73adc133bc07c42.jpg",
+          "rank": "1",
+          "type" : "iframe"
+        },
+        {
+          "name":"Vikings S2E5 - Answers in Blood", 
+          "link": "https://estream.to/embed-wakmy7cxzogc.html", 
+          "img": "http://www.redskiesguild.com/forum/uploads/FileUpload/48/0db66498ef1030d73adc133bc07c42.jpg",
+          "rank": "1",
+          "type" : "iframe"
+        },
+        {
+          "name":"Vikings S2E6 - Unforgiven", 
+          "link": "https://estream.to/embed-hrsxihvt1mb2.html", 
+          "img": "http://www.redskiesguild.com/forum/uploads/FileUpload/48/0db66498ef1030d73adc133bc07c42.jpg",
+          "rank": "1",
+          "type" : "iframe"
+        },
+        {
+          "name":"Vikings S2E7 - Blood Eagle", 
+          "link": "https://estream.to/embed-xat2652aug44.html", 
+          "img": "http://www.redskiesguild.com/forum/uploads/FileUpload/48/0db66498ef1030d73adc133bc07c42.jpg",
+          "rank": "1",
+          "type" : "iframe"
+        },
+        {
+          "name":"Vikings S2E8 - Boneless", 
+          "link": "https://estream.to/embed-groyi5u4xpdb.html", 
+          "img": "http://www.redskiesguild.com/forum/uploads/FileUpload/48/0db66498ef1030d73adc133bc07c42.jpg",
+          "rank": "1",
+          "type" : "iframe"
+        },
+        {
+          "name":"Vikings S2E9 - The Choice", 
+          "link": "https://estream.to/embed-qcq37v33ptds.html", 
+          "img": "http://www.redskiesguild.com/forum/uploads/FileUpload/48/0db66498ef1030d73adc133bc07c42.jpg",
+          "rank": "1",
+          "type" : "iframe"
+        },
+        {
+          "name":"Vikings S2E10 - The Lord's Prayer", 
+          "link": "https://estream.to/embed-1ep7738vfv9e.html", 
+          "img": "http://www.redskiesguild.com/forum/uploads/FileUpload/48/0db66498ef1030d73adc133bc07c42.jpg",
+          "rank": "1",
+          "type" : "iframe"
+        }
+      ];
+      //videos.sort(function(a,b) {return b.rank - a.rank;});
+      loadOnlyVideosPage(videos);
+   } 
+  </script>
+  <link rel="stylesheet" href="../../styles.css">
+  <script src='../../script.js'></script>
+  <link rel="shortcut icon" type="image/x-icon" href="../../favicon.ico" />
+</head>
+
+<body>
+  <span id="movie">
+    <a href="../../index.html">
+      <div class='image' style='background-image:url("cover.jpg")'></div> 
+    </a>
+    <span class='name'>Vikings (2013-?)</span>
+  </span>
+
+  <a id="home" href="../../index.html"></a>
+  <form id="change-content" name="changeContent"></form>
+
+  <span class='info'>
+    <span>Description: The adventures of Ragnar Lothbrok: the greatest hero of his age. The series tells the saga of Ragnar's band of Viking brothers and his family as he rises to become King of the Viking tribes. As well as being a fearless warrior, Ragnar embodies the Norse traditions of devotion to the gods: legend has it that he was a direct descendant of Odin, the god of war and warriors. </span>
+    <span>Links: 
+      <a target="_blank" href="https://gostream.is/film/vikings-season-1-3321/">Season 1</a>, 
+      <a target="_blank" href="https://gostream.is/film/vikings-season-2-3322/">Season 2</a>, 
+      <a target="_blank" href="https://gostream.is/film/vikings-season-3-7176/">Season 3</a>, 
+      <a target="_blank" href="https://gostream.is/film/vikings-season-4-9922/">Season 4</a>.
+    </span>
+  </span>
+
+  <ul id="videos"></ul>
+</body>
+
+</html>

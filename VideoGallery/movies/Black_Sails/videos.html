@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Black Sails</title>
+  <script>
+    window.onload = function() {
+      var videos = [ 
+        {
+          "name":"Black Sails Season 1", 
+          "link": "https://gostream.is/film/black-sails-season-1-8928/watching.html", 
+          "img": "http://johnjfalco.com/wp-content/uploads/2017/01/black-sails.jpg",
+          "rank": "1",
+          //"type" : "video"
+          //"type" : "iframe"
+          "type" : "link"
+        },
+        {
+          "name":"Black Sails Season 2", 
+          "link": "https://gostream.is/film/black-sails-season-2-8927/watching.html", 
+          "img": "http://johnjfalco.com/wp-content/uploads/2017/01/black-sails.jpg",
+          "rank": "1",
+          "type" : "link"
+        },
+        {
+          "name":"Black Sails Season 3", 
+          "link": "https://gostream.is/film/black-sails-season-3-8704/watching.html", 
+          "img": "http://johnjfalco.com/wp-content/uploads/2017/01/black-sails.jpg",
+          "rank": "1",
+          "type" : "link"
+        },
+        {
+          "name":"Black Sails Season 4", 
+          "link": "https://gostream.is/film/black-sails-season-4--19173/watching.html", 
+          "img": "http://johnjfalco.com/wp-content/uploads/2017/01/black-sails.jpg",
+          "rank": "1",
+          "type" : "link"
+        }     
+      ];
+      //videos.sort(function(a,b) {return b.rank - a.rank;});
+      loadOnlyVideosPage(videos);
+   } 
+  </script>
+  <link rel="stylesheet" href="../../styles.css">
+  <script src='../../script.js'></script>
+  <link rel="shortcut icon" type="image/x-icon" href="../../favicon.ico" />
+</head>
+
+<body>
+  <span id="movie">
+    <a href="../../index.html">
+      <div class='image' style='background-image:url("cover.jpg")'></div> 
+    </a>
+    <span class='name'>Black Sails (2014-2017)</span>
+  </span>
+
+  <a id="home" href="../../index.html"></a>
+  <form id="change-content" name="changeContent"></form>
+
+  <span class='info'>
+    <span>Description: The series centers on the tales of Captain Flint, who has a reputation throughout the West Indies as being the most brilliant, most feared of all the Golden Age pirates. The series is a prequel to Robert Louis Stevenson's "Treasure Island," and is set 20 years before the events depicted in that literary classic.</span>
+    <span>Links: 
+      <a target="_blank" href="https://gostream.is/film/black-sails-season-1-8928/">Season 1</a>, 
+      <a target="_blank" href="https://gostream.is/film/black-sails-season-2-8927/">Season 2</a>, 
+      <a target="_blank" href="https://gostream.is/film/black-sails-season-3-8704/">Season 3</a>, 
+      <a target="_blank" href="https://gostream.is/film/black-sails-season-4--19173/">Season 4</a>.
+    </span>
+  </span>
+
+  <ul id="videos"></ul>
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Spartacus</title>
+  <script>
+    window.onload = function() {
+      var photos = [ 
+        {
+          //"name": "",
+          //"link": "", 
+          //"img_full": "",
+          "img": "http://wallpapercave.com/wp/gOHpqFf.jpg",
+          "rank": "1"
+        },
+        {
+          "img": "https://images5.alphacoders.com/362/thumb-1920-362818.jpg",
+          "rank": "1"
+        },
+        {
+          "img": "http://cdn.wallpapersafari.com/42/58/xApyY2.jpg",
+          "rank": "1"
+        },
+        {
+          "img": "https://images4.alphacoders.com/242/thumb-1920-242994.jpg",
+          "rank": "1"
+        },
+        {
+          "img": "http://68.media.tumblr.com/7484f9b0795e47e040711f60fa2c6e49/tumblr_nfi004DEYR1sdlu9mo4_1280.png",
+          "rank": "1"
+        },
+        {
+          "img": "https://i0.wp.com/www.grcomiccon.com/wp-content/uploads/2015/08/Katrina-Law-Spartacus-05.jpg",
+          "rank": "1"
+        }
+      ];
+      //photos.sort(function(a,b) {return b.rank - a.rank;});
+      loadPhotosPage(photos);
+   } 
+  </script>
+  <link rel="stylesheet" href="../../styles.css">
+  <script src='../../script.js'></script>
+  <link rel="shortcut icon" type="image/x-icon" href="../../favicon.ico" />
+</head>
+
+<body>
+  <span id="movie">
+    <a href="../../index.html">
+      <div class='image' style='background-image:url("cover.jpg")'></div> 
+    </a>
+    <span class='name'>Spartacus (2010-2013)</span>
+  </span>
+
+  <a id="home" href="../../index.html"></a>
+  <form id="change-content" name="changeContent"></form>
+
+  <span class='info'>
+    <span>Description: Spartacus, falsely accused of betraying the Roman commander he pledged his allegiance to, is imprisoned and sent to the Amphitheater of Capua to be executed. But he rises gradually in the ranks of Gladiator until he earns the title Champion of Capua. Finding out that Batiatus had his wife killed, Spartacus leads a revolt against Batiatus and sets both gladiator and slave alike free from the Ludus. They leave for Rome, to build a slave army and to destroy the Roman Republic. </span>
+    <span>Links: 
+      <a target="_blank" href="https://gostream.is/film/spartacus-blood-and-sand-season-1-6436">Blood and Sand</a>, 
+      <a target="_blank" href="https://gostream.is/film/spartacus-gods-of-the-arena-season-4-6439">Gods of the Arena</a>, 
+      <a target="_blank" href="https://gostream.is/film/spartacus-vengeance-season-2-6437">Vengeance</a>, 
+      <a target="_blank" href="https://gostream.is/film/spartacus-war-of-the-damned-season-3-6438">War of the Damned</a>.
+    </span>
+  </span>
+
+  <div class="m-p-g">
+    <div class="m-p-g__thumbs" data-google-image-layout data-max-height="350" id="photos"></div>
+    <div class="m-p-g__fullscreen"></div>
+  </div>
+
+  <script type="text/javascript">
+    var elem = document.querySelector('.m-p-g');
+    document.addEventListener('DOMContentLoaded', function() { var gallery = new MaterialPhotoGallery(elem); });
+  </script>
+  <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/45226/material-photo-gallery.min.js'></script>
+</body>
+
+</html>

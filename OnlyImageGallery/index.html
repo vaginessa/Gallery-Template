@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Image Gallery</title>
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Mono:400,300' rel='stylesheet' type='text/css'> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"> -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ 
+  <div class="m-p-g">
+  	<div class="m-p-g__thumbs" data-google-image-layout data-max-height="350" id="photos"></div>
+  	<div class="m-p-g__fullscreen"></div>
+  </div>
+
+  <script>
+    window.onload = function() {
+     	var photos = [ 
+        {
+          "link": "images/img1.jpg", 
+        },
+        {
+          "link": "images/img2.jpg",
+        }, 
+        {
+          "link": "images/img3.jpg",
+        },
+        {
+          "link": "images/img4.jpg",
+        },
+        { 
+          "link": "images/img5.jpg",
+        },
+        {
+          "link": "images/img6.jpg",
+        },
+        {
+          "link": "images/img7.jpg",
+        },
+        {
+          "link": "images/img8.jpg",
+        },
+        {
+          "link": "images/img9.jpg",
+        }
+      ];
+      loadData(photos);
+    }  
+
+    function loadData(photos){
+      for(var i  = 0; i < photos.length; i++){
+           var photo = "<img src='" + photos[i].link + "' data-full='" + photos[i].link 
+             +"' class='m-p-g__thumbs-img'/>";
+           document.getElementById("photos").innerHTML += photo;
+      }
+    }  
+
+    var elem = document.querySelector('.m-p-g');
+    document.addEventListener('DOMContentLoaded', function() { var gallery = new MaterialPhotoGallery(elem); });
+  </script>
+
+  <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/45226/material-photo-gallery.min.js'></script>
+
+</body>
+</html>

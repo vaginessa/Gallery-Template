@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>The Witcher</title>
+  <script>
+    window.onload = function() {
+      var photos = [ 
+        {
+          "name": "The Witcher 3: Wild Hunt",
+          "link": "https://wall.alphacoders.com/by_sub_category.php?id=205945", 
+          //"img_full": "https://images3.alphacoders.com/608/thumb-1920-608887.jpg",
+          "img": "https://images4.alphacoders.com/598/thumb-1920-598623.jpg",
+          "rank": "1"
+        },
+        {
+          "name": "The Witcher 3: Wild Hunt",
+          "link": "https://wall.alphacoders.com/by_sub_category.php?id=205945", 
+          //"img_full": "",
+          "img": "https://images5.alphacoders.com/723/thumb-1920-723824.jpg",
+          "rank": "1"
+        },
+        {
+          "name": "The Witcher 3: Wild Hunt",
+          "link": "https://wall.alphacoders.com/by_sub_category.php?id=205945", 
+          //"img_full": "",
+          "img": "https://images6.alphacoders.com/657/thumb-1920-657079.jpg",
+          "rank": "1"
+        },
+        {
+          "name": "The Witcher 3: Wild Hunt",
+          "link": "https://wall.alphacoders.com/by_sub_category.php?id=205945", 
+          //"img_full": "",
+          "img": "https://images8.alphacoders.com/656/thumb-1920-656983.png",
+          "rank": "1"
+        },
+        {
+          "name": "The Witcher 3: Wild Hunt",
+          "link": "https://wall.alphacoders.com/by_sub_category.php?id=205945", 
+          //"img_full": "",
+          "img": "https://images7.alphacoders.com/706/thumb-1920-706092.jpg",
+          "rank": "1"
+        },
+        {
+          "name": "The Witcher 3: Wild Hunt",
+          "link": "https://wall.alphacoders.com/by_sub_category.php?id=205945", 
+          //"img_full": "",
+          "img": "https://images2.alphacoders.com/520/thumb-1920-520246.jpg",
+          "rank": "1"
+        },
+        {
+          "name": "The Witcher 3: Wild Hunt",
+          "link": "https://wall.alphacoders.com/by_sub_category.php?id=205945", 
+          //"img_full": "",
+          "img": "https://images6.alphacoders.com/418/thumb-1920-418407.jpg",
+          "rank": "1"
+        },
+        {
+          "name": "The Witcher 3: Wild Hunt",
+          "link": "https://wall.alphacoders.com/by_sub_category.php?id=205945", 
+          //"img_full": "",
+          "img": "https://images8.alphacoders.com/601/thumb-1920-601567.jpg",
+          "rank": "1"
+        },
+        {
+          "name": "The Witcher 3: Wild Hunt",
+          "link": "https://wall.alphacoders.com/by_sub_category.php?id=205945", 
+          //"img_full": "",
+          "img": "https://images5.alphacoders.com/595/thumb-1920-595155.jpg",
+          "rank": "1"
+        },
+        {
+          "name": "The Witcher 3: Wild Hunt",
+          "link": "https://wall.alphacoders.com/by_sub_category.php?id=205945", 
+          //"img_full": "",
+          "img": "https://images2.alphacoders.com/536/thumb-1920-536009.jpg",
+          "rank": "1"
+        },
+        {
+          "name": "The Witcher 3: Wild Hunt",
+          "link": "https://wall.alphacoders.com/by_sub_category.php?id=205945", 
+          //"img_full": "",
+          "img": "https://images5.alphacoders.com/418/thumb-1920-418977.jpg",
+          "rank": "1"
+        }
+      ];
+      //photos.sort(function(a,b) {return b.rank - a.rank;});
+      loadPhotosPage(photos);
+      document.getElementById("change-content").style.display = 'none';
+   } 
+  </script>
+  <link rel="stylesheet" href="../../styles.css">
+  <script src='../../script.js'></script>
+  <link rel="shortcut icon" type="image/x-icon" href="../../favicon.ico" />
+</head>
+
+<body>
+  <span id="movie">
+    <a href="../../index.html">
+      <div class='image' style='background-image:url("cover.jpg")'></div>
+    </a>
+    <span class='name'>The Witcher</span>
+  </span>
+  
+  <a id="home" href="../../index.html"></a>
+  <form id="change-content" name="changeContent"></form>
+
+  <span class='info'>
+    <span>Description: The witcher Geralt, a mutated monster hunter, struggles to find his place in a world where people often prove more wicked than beasts.</span>
+    <a href="https://www.netflix.com/ua/title/80189685" target='_blank'>Series page on Netflix</a>
+  </span>
+
+  <div class="m-p-g">
+    <div class="m-p-g__thumbs" data-google-image-layout data-max-height="350" id="photos"></div>
+    <div class="m-p-g__fullscreen"></div>
+  </div>
+
+  <script type="text/javascript">
+    var elem = document.querySelector('.m-p-g');
+    document.addEventListener('DOMContentLoaded', function() { var gallery = new MaterialPhotoGallery(elem); });
+  </script>
+  <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/45226/material-photo-gallery.min.js'></script>
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>The Last Kingdom</title>
+  <script>
+    window.onload = function() {
+      var videos = [ 
+        {
+          "name":"The Last Kingdom Season 1", 
+          "link": "https://gostream.is/film/the-last-kingdom-season-1-5992/watching.html", 
+          "img": "http://i.vimeocdn.com/video/538571544_640.jpg",
+          "rank": "1",
+          //"type" : "video"
+          //"type" : "iframe"
+          "type" : "link"
+        },
+        {
+          "name":"The Last Kingdom Season 2", 
+          "link": "https://gostream.is/film/the-last-kingdom-season-2-19833/watching.html", 
+          "img": "http://i.vimeocdn.com/video/538571544_640.jpg",
+          "rank": "1",
+          "type" : "link"
+        },
+      ];
+      //videos.sort(function(a,b) {return b.rank - a.rank;});
+      loadOnlyVideosPage(videos);
+   } 
+  </script>
+  <link rel="stylesheet" href="../../styles.css">
+  <script src='../../script.js'></script>
+  <link rel="shortcut icon" type="image/x-icon" href="../../favicon.ico" />
+</head>
+
+<body>
+  <span id="movie">
+    <a href="../../index.html">
+      <div class='image' style='background-image:url("cover.jpg")'></div> 
+    </a>
+    <span class='name'>The Last Kingdom (2015-?)</span>
+  </span>
+
+  <a id="home" href="../../index.html"></a>
+  <form id="change-content" name="changeContent"></form>
+
+  <span class='info'>
+    <span>Description: Set in the late ninth century, when what is known as England today was several separate kingdoms.Young warrior and outsider, Uhtred, on a fierce mission to reclaim his birthright. Adapted from Bernard Cornwell’s best-selling series of books “The Saxon Stories,” The Last Kingdom combines real historical figures and events with fiction, re-telling the history of King Alfred the Great and his desire to unite the many separate kingdoms into what would become England.</span>
+    <span>Links: 
+      <a target="_blank" href="https://gostream.is/film/the-last-kingdom-season-1-5992/">Season 1</a>, 
+      <a target="_blank" href="https://gostream.is/film/the-last-kingdom-season-2-19833/">Season 2</a>.
+    </span>
+  </span>
+
+  <ul id="videos"></ul>
+</body>
+
+</html>

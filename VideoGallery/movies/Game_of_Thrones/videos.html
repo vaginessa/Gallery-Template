@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Game of Thrones</title>
+  <script>
+    window.onload = function() {
+      var videos = [ 
+        {
+          "name":"Game of Thrones Season 1", 
+          "link": "https://gostream.is/film/game-of-thrones-season-1-1620.uwMm/watching.html", 
+          "img": "http://media.moddb.com/images/members/1/123/122021/profile/c9lzmv4d3mgzpnyntz7s.jpg",
+          "rank": "1",
+          //"type" : "video"
+          //"type" : "iframe"
+          "type" : "link"
+        },
+        {
+          "name":"Game of Thrones Season 2", 
+          "link": "https://gostream.is/film/game-of-thrones-season-2-1621.k5yJ/watching.html", 
+          "img": "http://media.moddb.com/images/members/1/123/122021/profile/c9lzmv4d3mgzpnyntz7s.jpg",
+          "rank": "1",
+          "type" : "link"
+        },
+        {
+          "name":"Game of Thrones Season 3", 
+          "link": "https://gostream.is/film/game-of-thrones-season-3-1622.8c6P/watching.html", 
+          "img": "http://media.moddb.com/images/members/1/123/122021/profile/c9lzmv4d3mgzpnyntz7s.jpg",
+          "rank": "1",
+          "type" : "link"
+        },
+        {
+          "name":"Game of Thrones Season 4", 
+          "link": "https://gostream.is/film/game-of-thrones-season-4-1587.sutb/watching.html", 
+          "img": "http://media.moddb.com/images/members/1/123/122021/profile/c9lzmv4d3mgzpnyntz7s.jpg",
+          "rank": "1",
+          "type" : "link"
+        },
+        {
+          "name":"Game of Thrones Season 5", 
+          "link": "https://gostream.is/film/game-of-thrones-season-5-3984.NbDz/watching.html", 
+          "img": "http://media.moddb.com/images/members/1/123/122021/profile/c9lzmv4d3mgzpnyntz7s.jpg",
+          "rank": "1",
+          "type" : "link"
+        },
+        {
+          "name":"Game of Thrones Season 6", 
+          "link": "https://gostream.is/film/game-of-thrones-season-6-11494/watching.html", 
+          "img": "http://media.moddb.com/images/members/1/123/122021/profile/c9lzmv4d3mgzpnyntz7s.jpg",
+          "rank": "1",
+          "type" : "link"
+        },
+        {
+          "name":"Game of Thrones Season 7", 
+          "link": "https://gostream.is/film/game-of-thrones-season-7-21203/watching.html", 
+          "img": "http://media.moddb.com/images/members/1/123/122021/profile/c9lzmv4d3mgzpnyntz7s.jpg",
+          "rank": "1",
+          "type" : "link"
+        }
+      ];
+      //videos.sort(function(a,b) {return b.rank - a.rank;});
+      loadOnlyVideosPage(videos);
+   } 
+  </script>
+  <link rel="stylesheet" href="../../styles.css">
+  <script src='../../script.js'></script>
+  <link rel="shortcut icon" type="image/x-icon" href="../../favicon.ico" />
+</head>
+
+<body>
+  <span id="movie">
+    <a href="../../index.html">
+      <div class='image' style='background-image:url("cover.jpg")'></div> 
+    </a>
+    <span class='name'>Game of Thrones (2011-2018)</span>
+  </span>
+
+  <a id="home" href="../../index.html"></a>
+  <form id="change-content" name="changeContent"></form>
+
+  <span class='info'>
+    <span>Description: Lord Eddard Stark is summoned to court by his old friend, King Robert Baratheon, to serve as the King';;s Hand. Across the narrow sea in Essos, the exiled Prince Viserys Targaryen forges a new alliance to regain the Iron Throne. But in a land where seasons can last a lifetime, winter is coming...and beyond the Great Wall that protects them, a forgotten evil has returned.</span>
+    <span>Links: 
+      <a target="_blank" href="https://gostream.is/film/game-of-thrones-season-1-1620.uwMm/">Season 1</a>, 
+      <a target="_blank" href="https://gostream.is/film/game-of-thrones-season-2-1621.k5yJ/">Season 2</a>, 
+      <a target="_blank" href="https://gostream.is/film/game-of-thrones-season-3-1622.8c6P/">Season 3</a>, 
+      <a target="_blank" href="https://gostream.is/film/game-of-thrones-season-4-1587.sutb/">Season 4</a>,
+      <a target="_blank" href="https://gostream.is/film/game-of-thrones-season-5-3984.NbDz/">Season 5</a>,
+      <a target="_blank" href="https://gostream.is/film/game-of-thrones-season-6-11494/">Season 6</a>,
+      <a target="_blank" href="https://gostream.is/film/game-of-thrones-season-7-21203/">Season 7</a>.
+    </span>
+  </span>
+
+  <ul id="videos"></ul>
+</body>
+
+</html>

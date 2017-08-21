@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Into the Badlands</title>
+  <script>
+    window.onload = function() {
+      var videos = [ 
+        {
+          "name":"Into the Badlands Season 1", 
+          "link": "https://gostream.is/film/into-the-badlands-season-1-6581/watching.html", 
+          "img": "https://upload.wikimedia.org/wikipedia/en/4/4d/Into_the_Badlands_%28TV_series%29_title.png",
+          "rank": "1",
+          //"type" : "video"
+          //"type" : "iframe"
+          "type" : "link"
+        },   
+        {
+          "name":"Into the Badlands Season 2", 
+          "link": "https://gostream.is/film/into-the-badlands-season-2-19888/watching.html", 
+          "img": "https://upload.wikimedia.org/wikipedia/en/4/4d/Into_the_Badlands_%28TV_series%29_title.png",
+          "rank": "1",
+          "type" : "link"
+        }
+      ];
+      //videos.sort(function(a,b) {return b.rank - a.rank;});
+      loadOnlyVideosPage(videos);
+   } 
+  </script>
+  <link rel="stylesheet" href="../../styles.css">
+  <script src='../../script.js'></script>
+  <link rel="shortcut icon" type="image/x-icon" href="../../favicon.ico" />
+</head>
+
+<body>
+  <span id="movie">
+    <a href="../../index.html">
+      <div class='image' style='background-image:url("cover.jpg")'></div> 
+    </a>
+    <span class='name'>Into the Badlands (2015-?)</span>
+  </span>
+
+  <a id="home" href="../../index.html"></a>
+  <form id="change-content" name="changeContent"></form>
+
+  <span class='info'>
+    <span>Description: The series features a story about a mighty warrior and a young boy who search for enlightenment in a ruthless territory controlled by feudal barons.</span>
+    <span>Links: 
+      <a target="_blank" href="https://gostream.is/film/into-the-badlands-season-1-6581/">Season 1</a>, 
+      <a target="_blank" href="https://gostream.is/film/into-the-badlands-season-2-19888/">Season 2</a>.
+    </span>
+  </span>
+
+  <ul id="videos"></ul>
+</body>
+
+</html>
